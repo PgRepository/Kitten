@@ -1,0 +1,177 @@
+digraph PG {
+size = "11,7.5";
+rotate = 90
+node57 [ label = "ClassDefinition"];
+symbol_PG [label = "PG" fontname = "Times-Italic" shape = box]
+node57 -> symbol_PG [label = "name" fontsize = 8]
+symbol_Object [label = "Object" fontname = "Times-Italic" shape = box]
+node57 -> symbol_Object [label = "superclassName" fontsize = 8]
+node56 [ label = "FieldDeclaration"];
+node0 [ label = "IntTypeExpression [int]"];
+node56 -> node0 [label = "type" fontsize = 8]
+symbol_val [label = "val" fontname = "Times-Italic" shape = box]
+node56 -> symbol_val [label = "name" fontsize = 8]
+node55 [ label = "FieldDeclaration"];
+node1 [ label = "ClassTypeExpression [String]"];
+symbol_String [label = "String" fontname = "Times-Italic" shape = box]
+node1 -> symbol_String [label = "name" fontsize = 8]
+node55 -> node1 [label = "type" fontsize = 8]
+symbol_msg [label = "msg" fontname = "Times-Italic" shape = box]
+node55 -> symbol_msg [label = "name" fontsize = 8]
+node54 [ label = "TestDeclaration"];
+node5 [ label = "Assert"];
+node4 [ label = "Equal [boolean]"];
+node2 [ label = "IntLiteral [int]: 1"];
+node4 -> node2 [label = "left" fontsize = 8]
+node3 [ label = "IntLiteral [int]: 1"];
+node4 -> node3 [label = "right" fontsize = 8]
+node5 -> node4 [label = "asserted" fontsize = 8]
+node54 -> node5 [label = "body" fontsize = 8]
+node53 [ label = "TestDeclaration"];
+node11 [ label = "Assert"];
+node10 [ label = "Equal [boolean]"];
+node8 [ label = "Addition [int]"];
+node6 [ label = "IntLiteral [int]: 2"];
+node8 -> node6 [label = "left" fontsize = 8]
+node7 [ label = "IntLiteral [int]: 2"];
+node8 -> node7 [label = "right" fontsize = 8]
+node10 -> node8 [label = "left" fontsize = 8]
+node9 [ label = "IntLiteral [int]: 5"];
+node10 -> node9 [label = "right" fontsize = 8]
+node11 -> node10 [label = "asserted" fontsize = 8]
+node53 -> node11 [label = "body" fontsize = 8]
+node52 [ label = "ConstructorDeclaration"];
+node12 [ label = "Skip"];
+node52 -> node12 [label = "body" fontsize = 8]
+node51 [ label = "MethodDeclaration"];
+node13 [ label = "VoidTypeExpression [void]"];
+node51 -> node13 [label = "returnType" fontsize = 8]
+symbol_direCiao [label = "direCiao" fontname = "Times-Italic" shape = box]
+node51 -> symbol_direCiao [label = "name" fontsize = 8]
+node15 [ label = "MethodCallCommand\nreferences String.output():void"];
+node14 [ label = "StringLiteral [String]: Ciao"];
+node15 -> node14 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node15 -> symbol_output [label = "name" fontsize = 8]
+node51 -> node15 [label = "body" fontsize = 8]
+node50 [ label = "MethodDeclaration"];
+node16 [ label = "VoidTypeExpression [void]"];
+node50 -> node16 [label = "returnType" fontsize = 8]
+symbol_setMsg [label = "setMsg" fontname = "Times-Italic" shape = box]
+node50 -> symbol_setMsg [label = "name" fontsize = 8]
+node18 [ label = "FormalParameters"];
+node17 [ label = "ClassTypeExpression [String]"];
+symbol_String [label = "String" fontname = "Times-Italic" shape = box]
+node17 -> symbol_String [label = "name" fontsize = 8]
+node18 -> node17 [label = "type" fontsize = 8]
+symbol_message [label = "message" fontname = "Times-Italic" shape = box]
+node18 -> symbol_message [label = "name" fontsize = 8]
+node50 -> node18 [label = "formals" fontsize = 8]
+node22 [ label = "Assignment"];
+node20 [ label = "FieldAccess [String]\nreferences PG.msg:String"];
+node19 [ label = "Variable [PG]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node19 -> symbol_this [label = "name" fontsize = 8]
+node20 -> node19 [label = "receiver" fontsize = 8]
+symbol_msg [label = "msg" fontname = "Times-Italic" shape = box]
+node20 -> symbol_msg [label = "name" fontsize = 8]
+node22 -> node20 [label = "lvalue" fontsize = 8]
+node21 [ label = "Variable [String]"];
+symbol_message [label = "message" fontname = "Times-Italic" shape = box]
+node21 -> symbol_message [label = "name" fontsize = 8]
+node22 -> node21 [label = "rvalue" fontsize = 8]
+node50 -> node22 [label = "body" fontsize = 8]
+node49 [ label = "MethodDeclaration"];
+node23 [ label = "VoidTypeExpression [void]"];
+node49 -> node23 [label = "returnType" fontsize = 8]
+symbol_setVal [label = "setVal" fontname = "Times-Italic" shape = box]
+node49 -> symbol_setVal [label = "name" fontsize = 8]
+node25 [ label = "FormalParameters"];
+node24 [ label = "IntTypeExpression [int]"];
+node25 -> node24 [label = "type" fontsize = 8]
+symbol_val [label = "val" fontname = "Times-Italic" shape = box]
+node25 -> symbol_val [label = "name" fontsize = 8]
+node49 -> node25 [label = "formals" fontsize = 8]
+node29 [ label = "Assignment"];
+node27 [ label = "FieldAccess [int]\nreferences PG.val:int"];
+node26 [ label = "Variable [PG]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node26 -> symbol_this [label = "name" fontsize = 8]
+node27 -> node26 [label = "receiver" fontsize = 8]
+symbol_val [label = "val" fontname = "Times-Italic" shape = box]
+node27 -> symbol_val [label = "name" fontsize = 8]
+node29 -> node27 [label = "lvalue" fontsize = 8]
+node28 [ label = "Variable [int]"];
+symbol_val [label = "val" fontname = "Times-Italic" shape = box]
+node28 -> symbol_val [label = "name" fontsize = 8]
+node29 -> node28 [label = "rvalue" fontsize = 8]
+node49 -> node29 [label = "body" fontsize = 8]
+node48 [ label = "MethodDeclaration"];
+node30 [ label = "VoidTypeExpression [void]"];
+node48 -> node30 [label = "returnType" fontsize = 8]
+symbol_sayPG [label = "sayPG" fontname = "Times-Italic" shape = box]
+node48 -> symbol_sayPG [label = "name" fontsize = 8]
+node33 [ label = "MethodCallCommand\nreferences String.output():void"];
+node32 [ label = "FieldAccess [String]\nreferences PG.msg:String"];
+node31 [ label = "Variable [PG]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node31 -> symbol_this [label = "name" fontsize = 8]
+node32 -> node31 [label = "receiver" fontsize = 8]
+symbol_msg [label = "msg" fontname = "Times-Italic" shape = box]
+node32 -> symbol_msg [label = "name" fontsize = 8]
+node33 -> node32 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node33 -> symbol_output [label = "name" fontsize = 8]
+node48 -> node33 [label = "body" fontsize = 8]
+node47 [ label = "MethodDeclaration"];
+node34 [ label = "VoidTypeExpression [void]"];
+node47 -> node34 [label = "returnType" fontsize = 8]
+symbol_main [label = "main" fontname = "Times-Italic" shape = box]
+node47 -> symbol_main [label = "name" fontsize = 8]
+node46 [ label = "LocalScope"];
+node45 [ label = "CommandSeq"];
+node37 [ label = "LocalDeclaration"];
+node35 [ label = "ClassTypeExpression [PG]"];
+symbol_PG [label = "PG" fontname = "Times-Italic" shape = box]
+node35 -> symbol_PG [label = "name" fontsize = 8]
+node37 -> node35 [label = "type" fontsize = 8]
+symbol_pg [label = "pg" fontname = "Times-Italic" shape = box]
+node37 -> symbol_pg [label = "name" fontsize = 8]
+node36 [ label = "NewObject [PG]\nreferences PG()"];
+symbol_PG [label = "PG" fontname = "Times-Italic" shape = box]
+node36 -> symbol_PG [label = "className" fontsize = 8]
+node37 -> node36 [label = "initialiser" fontsize = 8]
+node45 -> node37 [label = "first" fontsize = 8]
+node44 [ label = "CommandSeq"];
+node41 [ label = "Assignment"];
+node39 [ label = "FieldAccess [String]\nreferences PG.msg:String"];
+node38 [ label = "Variable [PG]"];
+symbol_pg [label = "pg" fontname = "Times-Italic" shape = box]
+node38 -> symbol_pg [label = "name" fontsize = 8]
+node39 -> node38 [label = "receiver" fontsize = 8]
+symbol_msg [label = "msg" fontname = "Times-Italic" shape = box]
+node39 -> symbol_msg [label = "name" fontsize = 8]
+node41 -> node39 [label = "lvalue" fontsize = 8]
+node40 [ label = "StringLiteral [String]: ciao"];
+node41 -> node40 [label = "rvalue" fontsize = 8]
+node44 -> node41 [label = "first" fontsize = 8]
+node43 [ label = "MethodCallCommand\nreferences String.output():void"];
+node42 [ label = "StringLiteral [String]: tutto ok!\\n"];
+node43 -> node42 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node43 -> symbol_output [label = "name" fontsize = 8]
+node44 -> node43 [label = "second" fontsize = 8]
+node45 -> node44 [label = "second" fontsize = 8]
+node46 -> node45 [label = "body" fontsize = 8]
+node47 -> node46 [label = "body" fontsize = 8]
+node48 -> node47 [label = "next" fontsize = 8 style = bold]
+node49 -> node48 [label = "next" fontsize = 8 style = bold]
+node50 -> node49 [label = "next" fontsize = 8 style = bold]
+node51 -> node50 [label = "next" fontsize = 8 style = bold]
+node52 -> node51 [label = "next" fontsize = 8 style = bold]
+node53 -> node52 [label = "next" fontsize = 8 style = bold]
+node54 -> node53 [label = "next" fontsize = 8 style = bold]
+node55 -> node54 [label = "next" fontsize = 8 style = bold]
+node56 -> node55 [label = "next" fontsize = 8 style = bold]
+node57 -> node56 [label = "declarations" fontsize = 8]
+}
