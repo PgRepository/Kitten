@@ -1,0 +1,4 @@
+digraph "ScrambleSpoto(int[],int)" {
+size = "11,7.5";
+codeblock_1 [ shape = box, label = "block 1\nload 0 of type ScrambleSpoto\ncall Object() [Object()]\nload 0 of type ScrambleSpoto\nload 1 of type int[]\nputfield ScrambleSpoto.array:int[]\nload 0 of type ScrambleSpoto\nload 2 of type int\nputfield ScrambleSpoto.length:int\nreturn void"];
+}
